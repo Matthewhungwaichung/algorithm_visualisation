@@ -9,28 +9,41 @@
 
 <body>
     <div id="tool_bar">
-        <button id="generate_new_array_button" class="button">Generate New Array</button>
+        <button id="generate_new_array_button" class="word_button" onclick="generate()">Generate New Array</button>
+        <div class="vertical_line"></div>
+        <div class="container">
+            <div class="center">
+                <div class="label">Array Size</div>
+                <button id = "sub" class="counter_button" onclick="decrement()">-</button>
+                <input type="number" id="array_size" value="8" readonly="">
+                <button id = "adding" class="counter_button" onclick="increment()">+</button>
 
-        <a class="vertical_line"></a>
-        <a id="array_size_control">
-            2
-        </a>
-        <a id="sorting_algorithm">
-            3
-        </a>
-        <a id="start_stop">
-            4
-        </a>
-        <a>2000000000000000000000</a>
-        <a>2000000000000000000000</a>
-        <a>2000000000000000000000</a>
-        <a>2000000000000000000000</a>
-        <a>2000000000000000000000</a>
+            </div>
+        </div>
+        <div class="vertical_line"></div>
+        <button  class="algorithm_button" onclick="">Bubble Sort</button>
+        <button  class="algorithm_button" onclick="">Quick Sort</button>
+        <button  class="algorithm_button" onclick="">Selection Sort</button>
+        <button  class="algorithm_button" onclick="">Heap Sort</button>
+        <button  class="algorithm_button" onclick="">Insertion Sort</button>
+        <button  class="algorithm_button" onclick=""> Merge Sort</button>
+        <div class="vertical_line"></div>
+        <div class="container">
+            <div class="center">
+                <label >Stop</label>
+                <label class="toggle_switch">
+                    <input id = "start_or_stop_toggle_switch" type="checkbox" onclick="start_or_stop_sorting()">
+                    <span class="slider"></span>
+                </label>
+                <label >Start</label>
+            </div>
+        </div>
 
 
     </div>
     <div id="space">
 
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,34 +1,142 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 /*
 For block
  */
-body{
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial Rounded MT Bold", serif;
+    font-size: 20px;
 }
 /*
 For class
  */
-.button{
+.word_button{
     border: none;
-    color: white;
+    color: inherit;
     background-color: inherit;
     cursor: pointer;
+    display: inline-block;
+    white-space:nowrap;/*make them wont warp around*/
 }
-.button:hover{
+.word_button:hover{
     color: antiquewhite;
 }
+.counter_button{
+    border: 1px outset black;
+    color: inherit;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    background-color: inherit;
+}
+.counter_button:hover{
+    color: antiquewhite;
+}
+
+.vertical_line{
+    border: none;
+    border-left: 2px solid black;
+    height: inherit;
+}
+
+.container{
+    position: relative;
+    height: inherit;
+    justify-content: space-evenly;
+}
+.center{/*for setting container centered*/
+    margin: 0;
+    position: inherit;
+    top: 50%;
+    transform: translateY(-50%); /*this two line setting the percentage*/
+    display: inline-flex;
+    white-space:nowrap;
+    justify-content: space-evenly;
+}
+.label{
+    margin: 0 10px;
+}
+.algorithm_button{
+    border: none;
+    color: inherit;
+    background-color: inherit;
+    cursor: pointer;
+    display: inline-block;
+    white-space:nowrap;/*make them wont warp around*/
+}
+.algorithm_button:hover{
+    color: antiquewhite;
+}
+.toggle_switch{
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    margin: 0 10px;
+}
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    transition: .4s;
+    border-radius: 50px;
+
+}
+.toggle_switch input {
+    display: none;
+}
+.slider:before{
+    position: absolute;
+    content: "";
+    top: 2px;
+    left: 2px;
+    height:21px;
+    width:21px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50px;
+
+
+}
+input:checked + .slider{
+    background-color: lawngreen;
+}
+input:checked + .slider:before{
+    transform: translateX(25px);
+}
+
 /*
 For ID
  */
 #tool_bar{
-    margin: 0;
+    color: white;
     background-color:gray;
     justify-content: space-evenly;
-    min-width: 100%;
-    height: 20px;
-    padding: 5px;
     display: inline-flex;
-    position: static;
+    position: relative;
+    min-width: 100%;
+    height: 75px;
+
 }
-
-
+#array_size{
+    background-color: inherit;
+    color: inherit;
+    border: none;
+    outline: none;
+    text-align: center;
+    margin: 0 10px;
+    height: 25px;
+    width: 25px;
+    font-size: 20px;
+}
 
