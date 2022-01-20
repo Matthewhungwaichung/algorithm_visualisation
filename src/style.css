@@ -59,19 +59,20 @@ For class
     white-space:nowrap;
     justify-content: space-evenly;
 }
-.label{
-    margin: 0 10px;
+.hide_box{
+    display: none;
 }
 .algorithm_button{
-    border: none;
     color: inherit;
     background-color: inherit;
     cursor: pointer;
-    display: inline-block;
     white-space:nowrap;/*make them wont warp around*/
 }
 .algorithm_button:hover{
     color: antiquewhite;
+}
+input[type=radio]:checked + .algorithm_button{
+    color: black;
 }
 .toggle_switch{
     position: relative;
@@ -91,6 +92,7 @@ For class
     transition: .4s;
     border-radius: 50px;
 
+
 }
 .toggle_switch input {
     display: none;
@@ -109,7 +111,7 @@ For class
 
 }
 input:checked + .slider{
-    background-color: lawngreen;
+    background-color: green;
 }
 input:checked + .slider:before{
     transform: translateX(25px);
