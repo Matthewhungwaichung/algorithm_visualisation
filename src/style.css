@@ -71,7 +71,7 @@ For class
 .algorithm_button:hover{
     color: antiquewhite;
 }
-input[type=radio]:checked + .algorithm_button{
+input[name="algorithm_choice"]:checked + .algorithm_button{
     color: black;
 }
 .toggle_switch{
@@ -111,7 +111,7 @@ input[type=radio]:checked + .algorithm_button{
 
 }
 input:checked + .slider{
-    background-color: green;
+    background-color: limegreen;
 }
 input:checked + .slider:before{
     transform: translateX(25px);
