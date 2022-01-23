@@ -27,6 +27,14 @@ For class
 .word_button:hover{
     color: antiquewhite;
 }
+.word_button_dis{
+    border: none;
+    color: red;
+    background-color: inherit;
+    cursor: default;
+    display: inline-block;
+    white-space:nowrap;
+}
 .counter_button{
     border: 1px outset black;
     color: inherit;
@@ -37,6 +45,14 @@ For class
 }
 .counter_button:hover{
     color: antiquewhite;
+}
+.counter_button_dis{
+    border: 1px outset black;
+    color: red;
+    height: 25px;
+    width: 25px;
+    cursor: default;
+    background-color: inherit;
 }
 
 .vertical_line{
@@ -116,7 +132,10 @@ input:checked + .slider{
 input:checked + .slider:before{
     transform: translateX(25px);
 }
-
+.dummy_array_element_container{
+    height: 30px;
+    background-color: black;
+}
 /*
 For ID
  */
@@ -140,5 +159,8 @@ For ID
     height: 25px;
     width: 25px;
     font-size: 20px;
+}
+#Array_size_label{
+    margin-right: 20px;
 }
 
