@@ -6,6 +6,7 @@ let start_or_stop_js = document.getElementById("start_or_stop_toggle_switch");
 let generate_new_array_button_js = document.querySelector('button[id="generate_new_array_button"]');
 let sub_js = document.querySelector('button[id="sub"]');
 let adding_js = document.querySelector('button[id="adding"]');
+let public_array;
 /*
 For preloading code
  */
@@ -81,16 +82,21 @@ function render_array_element(number_array){
     private variables
      */
     let array_size = array_size_js.value;
+    let height_ration_hop = 100/array_size;
+    let width_ratio = 100/(array_size*2+1);
     let array_element_container_js = document.getElementById("array_element_container");
+
     /*
     code
      */
     array_element_container_js.innerHTML = '';
-    let dummy_array_element_container = document.createElement("div");
-    dummy_array_element_container.className = "dummy_array_element_container";
-    dummy_array_element_container.style.height = array_size+"px";
-    array_element_container_js.appendChild(dummy_array_element_container);
-    console.log(number_array);
+    for (let number = 0 ; number<array_size ; number++){
+        let array_element = document.createElement("div");
+        array_element.className = "array_element";
+        array_element_container_js.appendChild(array_element);
+        array_element.style.height = (number_array[number]+1)*height_ration_hop+"%";
+        array_element.style.width = width_ratio+"%";
+    }
 
 }
 /*
@@ -99,14 +105,17 @@ Generate random array
 function generate_array(){
     let array_size = array_size_js.value;
     let number_array = [], new_position, temp;
-    for (let array_element = 0 ; array_element<array_size ; array_element++){
-        number_array.push(array_element);
+    for (let number = 0 ; number<array_size ; number++){
+        number_array.push(number);
     }
-    for (let array_element = 0 ; array_element<array_size ; array_element++){
-        new_position = Math.floor(Math.random()*(array_element+1));
-        temp = number_array[array_element];
-        number_array[array_element] = number_array[new_position];
+    for (let number = 0 ; number<array_size ; number++){
+        new_position = Math.floor(Math.random()*(number+1));
+        temp = number_array[number];
+        number_array[number] = number_array[new_position];
         number_array[new_position] = temp;
     }
+    public_array = number_array;
+    console.log(public_array);
     return number_array;
+
 }
