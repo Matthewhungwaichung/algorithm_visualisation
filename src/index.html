@@ -8,72 +8,72 @@
 </head>
 
 <body>
-    <div id="tool_bar">
-        <button id="generate_new_array_button" class="word_button" onclick="generate()">Generate New Array</button>
-        <div class="vertical_line"></div>
-        <div class="container">
-            <div class="center">
-                <div id = "Array_size_label" class="label">Array Size</div>
-                <button id = "sub" class="counter_button" onclick="decrement()">-</button>
-                <input type="number" id="array_size" value="8" readonly="">
-                <button id = "adding" class="counter_button" onclick="increment()">+</button>
+<div id="tool_bar">
+    <button id="generate_new_array_button" class="word_button" onclick="generate()">Generate New Array</button>
+    <div class="vertical_line"></div>
+    <div class="container">
+        <div class="center">
+            <div id = "Array_size_label" class="label">Array Size</div>
+            <button id = "sub" class="counter_button" onclick="decrement()">-</button>
+            <input type="number" id="array_size" value="8" readonly="">
+            <button id = "adding" class="counter_button" onclick="increment()">+</button>
 
-            </div>
         </div>
-        <div class="vertical_line"></div>
-        <div class="container">
-            <div class="center">
-                <input type="radio" name="algorithm_choice" class="hide_box" id="algorithm_choice_1" value="Bubble Sort" onclick="choose_algorithm()" checked="checked">
-                <label for="algorithm_choice_1" class="algorithm_button">Bubble Sort</label>
-            </div>
-        </div>
-        <div class="container">
-            <div class="center">
-                <input type="radio" name="algorithm_choice" class="hide_box" id="algorithm_choice_2" value="Quick Sort" onclick="choose_algorithm()">
-                <label for="algorithm_choice_2" class="algorithm_button">Quick Sort</label>
-            </div>
-        </div>
-        <div class="container">
-            <div class="center">
-                <input type="radio" name="algorithm_choice" class="hide_box" id="algorithm_choice_3" value="Selection Sort" onclick="choose_algorithm()">
-                <label for="algorithm_choice_3" class="algorithm_button">Selection Sort</label>
-            </div>
-        </div>
-        <div class="container">
-            <div class="center">
-                <input type="radio" name="algorithm_choice" class="hide_box" id="algorithm_choice_4" value="Heap Sort" onclick="choose_algorithm()">
-                <label for="algorithm_choice_4" class="algorithm_button">Heap Sort</label>
-            </div>
-        </div>
-        <div class="container">
-            <div class="center">
-                <input type="radio" name="algorithm_choice" class="hide_box" id="algorithm_choice_5" value="Insertion Sort" onclick="choose_algorithm()">
-                <label for="algorithm_choice_5" class="algorithm_button">Insertion Sort</label>
-            </div>
-        </div>
-        <div class="container">
-            <div class="center">
-                <input type="radio" name="algorithm_choice" class="hide_box" id="algorithm_choice_6" value="Merge Sort" onclick="choose_algorithm()">
-                <label for="algorithm_choice_6" class="algorithm_button">Merge Sort</label>
-            </div>
-        </div>
-        <div class="vertical_line"></div>
-        <div class="container">
-            <div class="center">
-                <label >Stop</label>
-                <label class="toggle_switch">
-                    <input id = "start_or_stop_toggle_switch" type="checkbox" onclick="start_or_stop_sorting()">
-                    <span class="slider"></span>
-                </label>
-                <label >Start</label>
-            </div>
-        </div>
-
-
     </div>
-    <div id="array_element_container">
+    <div class="vertical_line"></div>
+    <div class="container">
+        <div class="center">
+            <input type="radio" name="algorithm_choice" class="hide_box" id="algorithm_choice_1" value="Bubble Sort" onclick="choose_algorithm()" checked="checked">
+            <label for="algorithm_choice_1" class="algorithm_button">Bubble Sort</label>
+        </div>
+    </div>
+    <div class="container">
+        <div class="center">
+            <input type="radio" name="algorithm_choice" class="hide_box" id="algorithm_choice_2" value="Quick Sort" onclick="choose_algorithm()">
+            <label for="algorithm_choice_2" class="algorithm_button">Quick Sort</label>
+        </div>
+    </div>
+    <div class="container">
+        <div class="center">
+            <input type="radio" name="algorithm_choice" class="hide_box" id="algorithm_choice_3" value="Selection Sort" onclick="choose_algorithm()">
+            <label for="algorithm_choice_3" class="algorithm_button">Selection Sort</label>
+        </div>
+    </div>
+    <div class="container">
+        <div class="center">
+            <input type="radio" name="algorithm_choice" class="hide_box" id="algorithm_choice_4" value="Heap Sort" onclick="choose_algorithm()">
+            <label for="algorithm_choice_4" class="algorithm_button">Heap Sort</label>
+        </div>
+    </div>
+    <div class="container">
+        <div class="center">
+            <input type="radio" name="algorithm_choice" class="hide_box" id="algorithm_choice_5" value="Insertion Sort" onclick="choose_algorithm()">
+            <label for="algorithm_choice_5" class="algorithm_button">Insertion Sort</label>
+        </div>
+    </div>
+    <div class="container">
+        <div class="center">
+            <input type="radio" name="algorithm_choice" class="hide_box" id="algorithm_choice_6" value="Merge Sort" onclick="choose_algorithm()">
+            <label for="algorithm_choice_6" class="algorithm_button">Merge Sort</label>
+        </div>
+    </div>
+    <div class="vertical_line"></div>
+    <div class="container">
+        <div class="center">
+            <label >Stop</label>
+            <label class="toggle_switch">
+                <input id = "start_or_stop_toggle_switch" type="checkbox" onclick="start_or_stop_sorting()">
+                <span class="slider"></span>
+            </label>
+            <label >Start</label>
+        </div>
     </div>
 
-    <script src="script.js"></script>
+
+</div>
+<div id="array_element_container">
+</div>
+
+<script type="module" src="./Js/script.js"></script>
 </body>
 </html>

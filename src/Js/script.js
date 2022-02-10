@@ -1,3 +1,4 @@
+import {bubble_sort} from "./bubble_sort.js";
 /*
 For public variables
  */
@@ -7,10 +8,16 @@ let generate_new_array_button_js = document.querySelector('button[id="generate_n
 let sub_js = document.querySelector('button[id="sub"]');
 let adding_js = document.querySelector('button[id="adding"]');
 let public_array;
+
 /*
-For preloading code
+For window obj
  */
-render_array_element(generate_array());
+window.generate = generate;
+window.decrement = decrement;
+window.increment = increment;
+window.start_or_stop_sorting = start_or_stop_sorting;
+window.choose_algorithm = choose_algorithm;
+window.render_array_element = render_array_element;
 /*
 For generate new array button
  */
@@ -119,3 +126,9 @@ function generate_array(){
     return number_array;
 
 }
+/*
+For preloading code
+ */
+generate();
+
+bubble_sort(generate);
