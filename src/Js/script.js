@@ -90,7 +90,6 @@ For toggle button start and stop
 function start_or_stop_sorting(){
     if (start_or_stop_js.checked===true){
         disable();
-        console.log("started");
         eval(`${algorithm_choice}(render_array_element, public_array, enable)`);
 
     }
@@ -105,7 +104,6 @@ function start_or_stop_sorting(){
 For algorithm button
  */
 function choose_algorithm(){
-    console.log(document.querySelector('input[name="algorithm_choice"]:checked').value);
     algorithm_choice = document.querySelector('input[name="algorithm_choice"]:checked').value;
 }
 
@@ -155,7 +153,6 @@ function generate_array(){
         number_array[new_position] = temp;
     }
     public_array = number_array;
-    console.log(public_array);
 
 }
 
