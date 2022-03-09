@@ -11,7 +11,7 @@ For block
     padding: 0;
     box-sizing: border-box;
     font-family: "Arial Rounded MT Bold", serif;
-    font-size: 20px;
+    font-size: 22px;
 }
 /*
 For class
@@ -29,7 +29,7 @@ For class
 }
 .word_button_dis{
     border: none;
-    color: red;
+    color: rgba(214, 29, 29, 0.8);
     background-color: inherit;
     cursor: default;
     display: inline-block;
@@ -57,7 +57,7 @@ For class
 
 .vertical_line{
     border: none;
-    border-left: 2px solid black;
+    border-left: 4px solid black;
     height: inherit;
 }
 
@@ -88,7 +88,7 @@ For class
     color: antiquewhite;
 }
 input[name="algorithm_choice"]:checked + .algorithm_button{
-    color: black;
+    color: rgba(174, 73, 235, 92);
 }
 .toggle_switch{
     position: relative;
@@ -107,8 +107,9 @@ input[name="algorithm_choice"]:checked + .algorithm_button{
     background-color: black;
     transition: .4s;
     border-radius: 50px;
-
-
+}
+.slider_dis{
+    cursor: default;
 }
 .toggle_switch input {
     display: none;
@@ -140,14 +141,14 @@ input:checked + .slider:before{
     position: relative;
     top: 100%;
     transform: translateY(-100%);
-    background-color: black;
+    background-color: rgba(67, 151, 235, 92);
 }
 /*
 For ID
  */
 #tool_bar{
     color: white;
-    background-color:gray;
+    background-color:rgba(46, 77, 112, 44);
     justify-content: space-evenly;
     position: static;
     display: inline-flex;
@@ -174,7 +175,7 @@ For ID
     margin: 0 10px;
     height: 25px;
     width: 25px;
-    font-size: 20px;
+    font-size: 22px;
 }
 #Array_size_label{
     margin-right: 20px;
